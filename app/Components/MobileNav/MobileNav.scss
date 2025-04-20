@@ -1,0 +1,56 @@
+@use "../../scss/main" as *;
+
+.mobileNav {
+    position: fixed;
+    font-family: RacingSansOne;
+    width: 100%;
+    background-color: rgba(#33b9ed, 0.067);
+    backdrop-filter: blur(100px);
+    border-bottom: 1px solid #17BEFF;
+    z-index: 999;
+    display: block;
+
+    .navContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 80px;
+        height: 88px;
+
+        .logo {
+            width: 180px;
+        }
+
+    }
+    .menu {
+        position: absolute;
+        top: 80;
+        left: 0;
+        width: 100%;
+        
+        .menu-items {
+            background-color: rgba(#33b9ed, 0.067);
+            backdrop-filter: blur(100px);
+            color: #fff;
+            margin-inline: 10px;
+            
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+    
+            li {
+                list-style: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .mobileNav {
+        display: none;
+    }
+}

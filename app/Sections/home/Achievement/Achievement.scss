@@ -1,0 +1,76 @@
+@use "../../../scss/main" as *;
+
+.achievement-container {
+    position: relative;
+    margin-top: 80px;
+
+    &__bg {
+        position: absolute;
+        width: 100%;
+        opacity: 0.8;
+    }
+
+    .contents {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        
+        h1 {
+            font-family: RacingSansOne;
+            color: #17BEFF;
+        }
+        
+        .projects-completed {
+            display: flex;
+            align-items: center;
+            text-align: start;
+            gap: 20px;
+
+            
+            &__image {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        .years-of-experience {
+            display: flex;
+            align-items: center;
+            text-align: end;
+            gap: 20px;
+
+            
+            &__image {
+                width: 80px;
+                height: 80px;
+            }
+        }
+        
+        .awards {
+            display: flex;
+            align-items: center;
+            text-align: start;
+            gap: 20px;
+
+            
+            &__image {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        .clients {
+            display: flex;
+            align-items: center;
+            text-align: end;
+            gap: 20px;
+
+            
+            &__image {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+}

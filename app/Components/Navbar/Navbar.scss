@@ -1,0 +1,90 @@
+@use "../../scss/main" as *;
+
+.nav {
+    position: fixed;
+    z-index: 999;
+    font-family: RacingSansOne;
+    width: 100%;
+    background-color: rgba(#33b9ed, 0.067);
+    backdrop-filter: blur(100px);
+    border-bottom: 1px solid #17BEFF;
+    
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+        height: 88px;
+
+        .logo {
+            width: 160px;
+            border-radius: 40px;
+            background-color: rgba(255, 255, 255, 0.965);
+            backdrop-filter: blur(100px);
+        }
+        
+        .nav-list {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 35px;
+        }
+        
+        .nav-item {
+            list-style: none;
+        }
+        
+        .contact {
+            font-family: RacingSansOne;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: 2px solid #17BEFF;
+            border-radius: 40px;
+            background: none;
+            color: #fff;
+            cursor: pointer;
+            
+            :hover {
+                background: #17BEFF;
+            }
+        }
+        .ham-menu {
+            display: none;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1025px) {
+    .nav {
+        .container {
+            gap: 30px;
+
+            .logo {
+                width: 140px;
+            }
+
+            .nav-list {
+                gap: 22px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .nav {
+        display: none;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+    .nav {
+        .container {
+            .nav-list{
+                gap: 30px;
+            }
+            
+            .contact {
+            }
+        }
+    }
+}

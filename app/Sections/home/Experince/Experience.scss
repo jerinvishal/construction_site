@@ -1,0 +1,58 @@
+@use "../../../scss/main" as *;
+
+    
+.experince-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+    
+    .desc {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        &__left {
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            
+            .contents {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                text-align: start;
+                
+                p {
+                    font-family: Poppins-regular;
+                    font-size: 18px;
+                    line-height: 30px;
+                    letter-spacing: 1;
+                }
+            }
+        }
+        
+        
+    }
+}   
+
+@media screen and (max-width: 1025px) {
+    .experince-container{
+        .desc{
+            &__right {
+                img {
+                    width: 240px;
+                }
+            }
+            &__left {
+                max-width: 600px;
+            }
+        }
+    }
+}
+    
